@@ -40,12 +40,22 @@ $(document).ready(function(){
     var fingersFingers = parseInt($("#fingercount2").val());
     var organ= $("input:radio[name=organ]:checked").val();
     var feetFingers = parseInt($("#feet").val());
-    alert(hand);
-    alert(fingers);
-    alert(fingersFingers);
-    alert(organ);
-    alert(feetFingers);
+    // alert(hand);
+    // alert(fingers);
+    // alert(fingersFingers);
+    // alert(organ);
+    // alert(feetFingers);
+    // var yourLanguage = fingersFingers + fingers;
+    // $("span#language").empty().append(yourLanguage);
+    // $("#output-div").show();
 
+    if (fingersFingers >= fingers) {
+      $("span#language").empty().append("C#");
+      $("#output-div").show();
+    } else {
+      $("span#language").empty().append("Ruby");
+      $("#output-div").show();
+    }
 
 
 

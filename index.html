@@ -12,108 +12,82 @@
     <div id="header">
       <h1>What Coding Language is best for you?</h1>
       <h3>Answer these questions for the proper guidance</h3>
+      <img id="icon" src="img/computer.png" alt="Computer Icon">
     </div>
     <div id=project-container>
-
     <div id="handedness-wrapper" class="container">
       <h2>Are you left handed? Or right handed?</h2>
-        <form id="handedness-form" action="index.html" method="post">
-
-          <div id="lefthand-wrapper">
-            <label>
-            <input id="lefthand"class="radio-input" type="radio" name="hand" value="lefthand">Left Handed</label>
-          </div>
-
-          <div id="lefthand-wrapper">
-            <label>
-            <input id="righthand" class="radio-input" type="radio" name="hand" value="righthand">Right Handed</label>
-          </div>
-        </form>
+      <form id="handedness-form" action="index.html" method="post">
+        <div id="lefthand-wrapper">
+          <label>
+          <input id="lefthand"class="radio-input" type="radio" name="hand" value="lefthand">Left Handed</label>
+        </div>
+        <div id="lefthand-wrapper">
+          <label>
+          <input id="righthand" class="radio-input" type="radio" name="hand" value="righthand">Right Handed</label>
+        </div>
+      </form>
       <img class="hand" src="img/hand1.png" alt="picutre of hand">
-     </div>
-
-      <hr>
-
-      <div id="finger-wrapper" class="container">
-        <form id="fingerform" action="index.html" method="post">
-          <label for="fingercount">How many fingers do you have?</label>
-            <input id="fingercount" type="text">
-        </form>
+    </div>
+    <hr>
+    <div id="finger-wrapper" class="container">
+      <form id="fingerform" action="index.html" method="post">
+        <label for="fingercount">How many fingers do you have?</label>
+        <input id="fingercount" type="text">
+      </form>
+    </div>
+    <hr>
+    <div id="finger-wrapper-2" class="container">
+      <form id="fingerform2" action="index.html" method="post">
+        <label for="fingercount2">In total, how many fingers do your fingers have?</label>
+          <input id="fingercount2" type="text">
+      </form>
+    </div>
+    <hr>
+    <div id="organ-wrapper" class="container">
+      <h2>Which organ is stored in under the palm of your hand?</h2>
+      <form id="organ" action="index.html" method="post">
+        <div id="organ-wrapper">
+          <label>
+          <input id="lungs" class="radio-input" type="radio" name="organ" value="lungs">Lungs</label>
+          <label>
+          <input id="kidneys" class="radio-input" type="radio" name="organ" value="kidneys" >Kidneys</label>
+          <label>
+          <input id="liver"class="radio-input" type="radio" name="organ" value="liver">Liver</label>
+          <label>
+          <input id="pancreas"class="radio-input" type="radio" name="organ" value="pancreas">Pancreas</label>
       </div>
+      </form>
+    </div>
+    <hr>
+    <div id="feet-wrapper" class="container">
+      <h2>How many feet do your fingers have?</h2>
+      <form id="feetform" action="index.html" method="post">
+        <select class="form-control" id="feet">
+          <option>Please select from the drop down menu:</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </form>
+    </div>
+    <hr>
+    </div>
+    <div id="button-div">
+      <h1>Click the button to determine the best coding language for your personal sensibilities</h1>
+      <button id="finalsubmit" type="button" class="btn btn-primary btn-lg">Click Here</button>
+    </div>
+    <div id="output-div" class="container">
+      <p>After an advanced algorithmic calculation, we have detemined that <span id="language"></span> is the appropriate coding language for you to learn. Good luck, friend!</p>
+    </div>
 
-      <hr>
-
-      <div id="finger-wrapper-2" class="container">
-        <form id="fingerform2" action="index.html" method="post">
-          <label for="fingercount2">In total, how many fingers do your fingers have?</label>
-            <input id="fingercount2" type="text">
-        </form>
-      </div>
-
-      <hr>
-
-        <div id="organ-wrapper" class="container">
-          <h2>Which organ is stored in under the palm of your hand?</h2>
-            <form id="organ" action="index.html" method="post">
-              <div id="organ-wrapper">
-                <label>
-                <input id="lungs" class="radio-input" type="radio" name="organ" value="lungs">Lungs</label>
-                <label>
-                <input id="kidneys" class="radio-input" type="radio" name="organ" value="kidneys" >Kidneys</label>
-                <label>
-                <input id="liver"class="radio-input" type="radio" name="organ" value="liver">Liver</label>
-                <label>
-                <input id="pancreas"class="radio-input" type="radio" name="organ" value="pancreas">Pancreas</label>
-              </div>
-            </form>
-         </div>
-
-
-      <hr>
-
-      <div id="feet-wrapper" class="container">
-        <h2>How many feet do your fingers have?</h2>
-        <form id="feetform" action="index.html" method="post">
-          <select class="form-control" id="feet">
-            <option>Please select from the drop down menu:</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-        </form>
-      </div>
-      <hr>
-
-
-
-      </div>
-      <div id="button-div">
-        <h1>Click the button to determine the best coding language for your personal sensibilities</h1>
-        <button id="finalsubmit" type="button" class="btn btn-primary btn-lg">Click Here</button>
-      </div>
-
-
-
-      <div id="output-div" class="container">
-        <p>After an advanced algorithmic calculation, we have detemined that <span id="language"></span> is the appropriate coding language for you to learn. Good luck, friend!</p>
-      </div>
-
-      <div id="output-div2" class="container">
-        <p>You should not pursue programming.</p>
-      </div>
-
-
-
-
-
-
-
-
-
-
-
-   </div>
+    <div id="output-div2" class="container">
+      <p>You should not pursue programming.</p>
+    </div>
+    <div id="footer">
+      <p id="footerp">Copyright 2019. Charles Hand Institute of Computer Sciences</p>
+    </div>
   </body>
 </html>

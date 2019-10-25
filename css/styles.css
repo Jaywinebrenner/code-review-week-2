@@ -12,6 +12,10 @@
   margin: 8px;
 }
 
+#icon{
+  margin: 30px 30px;
+}
+
 #finger-wrapper{
   margin-top: 50px
 }
@@ -30,10 +34,11 @@
 
 #header{
   text-align: center;
-  margin: 10px 0 50px 0;
+  margin-bottom: 50px;
   width: 100%
-  height: auto;
+  height: 600px;
   background-color: lightgray;
+  padding: 30px 0;
 }
 
 #eyeball-wrapper{
@@ -47,13 +52,13 @@
 
 #finalsubmit{
   background-color: #d11521;
-color: white;
-margin: 40px 0;
-padding: 15px 32px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 26px;
+  color: white;
+  margin: 40px 0;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 26px;
 }
 
 h2{
@@ -64,15 +69,17 @@ h2{
     font-size:5.4rem;
 }
 
-
-
 p {
   font-size: 2rem;
+  margin-bottom: 0;
+
 }
 
 span{
   font-weight: bold;
   text-decoration: underline;
+  color: #d11521;
+}
 }
 
 .hand{
@@ -83,4 +90,14 @@ span{
   position:relative;
   margin-bottom: 300px;
 
+}
+
+#footer{
+  background-color: lightgray;
+  text-align: center;
+  margin-bottom: 0;
+  height: 30px;
+}
+#footerp{
+  font-size: 1rem;
 }

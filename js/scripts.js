@@ -33,7 +33,7 @@ $(document).ready(function(){
       alert("1");
     } else {
       $("span#language").empty().append("nothing");
-      $("#output-div").show();
+      $("#output-div").fadeIn();
     }
 
 

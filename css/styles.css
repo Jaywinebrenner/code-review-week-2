@@ -4,6 +4,33 @@
 
 
 #finger-wrapper{
-  margin-top: 20px;
+  margin-top: 50px
 
+}
+
+#finger-wrapper-2{
+  margin-top: 50px
+}
+
+#header{
+  text-align: center;
+  margin: 10px 0 50px 0;
+  width: 100%
+  height: auto;
+  background-color: lightgray;
+}
+
+
+#eyeball-wrapper{
+  margin-top: 50px
+}
+
+
+#button-div{
+  text-align: center;
+  margin: 50px auto;
+}
+
+h2{
+  font-size: 1.4rem;
 }

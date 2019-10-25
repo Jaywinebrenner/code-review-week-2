@@ -9,28 +9,32 @@
     <title></title>
   </head>
   <body>
+    <div id="header">
+      <h1>What Coding Language is best for you?</h1>
+      <h3>Answer these questions for the proper guidance</h3>
+    </div>
     <div id=project-container>
 
 
 
-      <div id="handedness-wrapper" class="container">
-        <h2>Are you left handed? Or right handed?</h2>
-          <form id="handedness-form" action="index.html" method="post">
+    <div id="handedness-wrapper" class="container">
+      <h2>Are you left handed? Or right handed?</h2>
+        <form id="handedness-form" action="index.html" method="post">
 
-            <div id="lefthand-wrapper">
-              <label>
-              <input id="lefthand"class="radio-input" type="radio" name="lefthand" value="lefthand" onchange="valueChanged()">Left Handed</label>
-            </div>
+          <div id="lefthand-wrapper">
+            <label>
+            <input id="lefthand"class="radio-input" type="radio" name="hand" value="lefthand">Left Handed</label>
+          </div>
 
-            <div id="lefthand-wrapper">
-              <label>
-              <input id="righthand" class="radio-input" type="radio" name="righthand" value="righthand" onchange="valueChanged()">Right Handed</label>
-            </div>
-            <button id="handedness-submit" class="btn btn-primary" type="submit" name="button">Enter</button>
-          </form>
+          <div id="lefthand-wrapper">
+            <label>
+            <input id="righthand" class="radio-input" type="radio" name="hand" value="righthand" >Right Handed</label>
+          </div>
+          <button id="handedness-submit" class="btn btn-primary" type="submit" name="button">Enter</button>
+        </form>
+     </div>
 
-      </div>
-
+      <hr>
 
       <div id="finger-wrapper" class="container">
         <form id="fingerform" action="index.html" method="post">
@@ -40,6 +44,8 @@
         </form>
       </div>
 
+      <hr>
+
       <div id="finger-wrapper-2" class="container">
         <form id="fingerform2" action="index.html" method="post">
           <label for="fingercount2">In total, how many fingers do your fingers have?</label>
@@ -47,6 +53,8 @@
           <button id="fingersubmit2" class="btn btn-primary" type="submit" name="button">Enter</button>
         </form>
       </div>
+
+      <hr>
 
       <div id="eyeball-wrapper" class="container">
         <label for="eyes">Do you have an eye embedded in the palm of your hand?</label>
@@ -56,11 +64,22 @@
            </select>
           <button id="eyes-submit" class="btn btn-primary" type="submit" name="button">Enter</button>
       </form>
+
+      <hr>
+
+      </div>
+      <div id="button-div">
+        <button id="finalsubmit" type="button" class="btn btn-primary btn-lg">Click Here</button>
       </div>
 
-       <!-- <div id="quote">
-         <p>You will have to pay $<span id="rate"></span> for your animal insurance. Does not cover dismemberment.</p>
-       </div> -->
+
+
+      <div id="output-div" class="container">
+        <p>After an advanced algorithmic calculation, we have detemined that <span></span> is the appropriate coding language for you to learn. Good luck, friend!</p>
+      </div>
+
+
+
 
 
 

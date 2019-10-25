@@ -1,61 +1,39 @@
-// $(document).ready(function(){
-//   $("handedness-submit").submit(function(event){
-//       var leftHand = $("input:radio[name=lefthand]:checked").val();
-//       var rightHand = $("input:radio[name=righthand]:checked").val();
-//
-//       function valueChanged() {
-//     if ($("#lefthand").checked == true) {
-//         var leftHand = $("input:radio[name=lefthand]:checked").val();
-//         document.getElementById("is_Mercedes").value = 0;
-//     } else {
-//         document.getElementById("is_BMW").value = 0;
-//         document.getElementById("is_Mercedes").value = 1;
-//     }
-//     console.log(document.getElementById("is_BMW").value);
-//     console.log(document.getElementById("is_Mercedes").value)
-// }
-//
-//
-//
-//
-//       // if ($("input:radio[name=lefthand]:checked").val();)
-//
-//     event.preventDefault();
-//   });
-//
-//
-// });
-
-
-
 $(document).ready(function(){
-  $("#fingerform").submit(function(event){
+  $("#handedness-form").submit(function(event){
     event.preventDefault();
-    var fingers = parseInt($("#fingercount").val());
-    var fingersFingers = parseInt($("#fingercount2").val());
-    var eyes = $("select#eyes").val();
+    var hand = $("input:radio[name=hand]:checked").val();
+    alert(hand);
 
 
-    // if (age) {
-    //    var quote = 1000 - age;
-    //    if (gender === 'male' && age < 56) {
-    //      quote += 250;
-    //    }
-    //    $("#rate").empty().append(quote);
-    //    $("#quote").show();
-    //  } else {
-    //    alert('Please enter your age.');
-    //  }
+
+
+
+
+  });
+
+
 });
 
-  });
-
-  $(document).ready(function(){
-    $("#fingerform2").submit(function(event){
-      event.preventDefault();
-      var fingersFingers = parseInt($("#fingercount2").val());
 
 
-  });
-
-    });
+// $(document).ready(function(){
+// //   $("#fingerform").submit(function(event){
+// //     event.preventDefault();
+// //     var fingers = parseInt($("#fingercount").val());
+// //     var fingersFingers = parseInt($("#fingercount2").val());
+// //     var eyes = $("select#eyes").val();
+// //
+// //
+// //     // if (age) {
+// //     //    var quote = 1000 - age;
+// //     //    if (gender === 'male' && age < 56) {
+// //     //      quote += 250;
+// //     //    }
+// //     //    $("#rate").empty().append(quote);
+// //     //    $("#quote").show();
+// //     //  } else {
+// //     //    alert('Please enter your age.');
+// //     //  }
+// // });
+// //
+// //   });

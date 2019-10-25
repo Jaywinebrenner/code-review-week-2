@@ -3,7 +3,7 @@
   <head>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/query-3.4.1.js" charset="utf-8"></script>
+    <script src="js/jquery-3.4.1.js" charset="utf-8"></script>
     <script src="js/scripts.js" charset="utf-8"></script>
     <meta charset="utf-8">
     <title></title>
@@ -15,21 +15,18 @@
 
       <div id="handedness-wrapper" class="container">
         <h2>Are you left handed? or right handed?</h2>
-
-
           <form id="handedness-form" action="index.html" method="post">
 
             <div id="lefthand-wrapper">
               <label>
-              <input class="radio-input" type="radio" name="lefthand" value="lefthand" checked>Left Handed</label>
+              <input class="radio-input" type="radio" name="lefthand" value="lefthand">Left Handed</label>
             </div>
 
             <div id="lefthand-wrapper">
               <label>
               <input class="radio-input" type="radio" name="righthand" value="righthand">Right Handed</label>
             </div>
-            <button class="btn btn-primary" type="submit" name="button">Enter</button>
-
+            <button id="handedness-submit" class="btn btn-primary" type="submit" name="button">Enter</button>
           </form>
 
       </div>

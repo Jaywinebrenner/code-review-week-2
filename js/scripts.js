@@ -1,40 +1,6 @@
-// $(document).ready(function(){
-//   $("form#handedness-form").submit(function(event){
-//     event.preventDefault();
-//     var hand = $("input:radio[name=hand]:checked").val();
-//     alert(hand);
-// });
-//
-//     $("form#fingerform").submit(function(event){
-//       event.preventDefault();
-//       var fingers = parseInt($("#fingercount").val());
-//       alert(fingers);
-// });
-//
-//     $("form#fingerform2").submit(function(event){
-//       event.preventDefault();
-//       var fingersfingers = parseInt($("#fingercount2").val());
-//       alert(fingersfingers);
-// });
-//
-//     $("form#organ").submit(function(event){
-//       event.preventDefault();
-//       var organ= $("input:radio[name=organ]:checked").val();
-//       alert(organ);
-// });
-//
-//     $("form#feetform").submit(function(event){
-//       event.preventDefault();
-//       var feetFingers = parseInt($("#feet").val());
-//       alert(feetFingers);
-//     });
-//
-//
-// });
-
-
 $(document).ready(function(){
-  $("#finalsubmit").click(function(){
+  $("#finalsubmit").click(function(event){
+    event.preventDefault();
     var hand = $("input:radio[name=hand]:checked").val();
     var fingers = parseInt($("#fingercount").val());
     var fingersFingers = parseInt($("#fingercount2").val());
@@ -45,35 +11,35 @@ $(document).ready(function(){
     // alert(fingersFingers);
     // alert(organ);
     // alert(feetFingers);
-    // var yourLanguage = fingersFingers + fingers;
-    // $("span#language").empty().append(yourLanguage);
-    // $("#output-div").show();
 
-    if (fingersFingers >= fingers) {
+
+
+    // if (fingers >= fingersFingers) {
+    //   $("span#language").empty().append("C#");
+    //   $("#output-div").show();
+    // }
+
+    // if (hand === "lefthand") {
+    //
+    //   $("span#language").empty().append("Ruby");
+    //   $("#output-div").show();
+    //       }
+
+    if ((hand === "lefthand")) {
+      $("span#language").empty().append("Ruby");
+      $("#output-div").show();
+    } else if (fingers >= 10) {
       $("span#language").empty().append("C#");
       $("#output-div").show();
     } else {
-      $("span#language").empty().append("Ruby");
-      $("#output-div").show();
+      //  block of code to be executed if the condition1 is false and condition2 is false
     }
+
+
+
+
 
 
 
   });
 });
-
-
-
-// //     // if (age) {
-// //     //    var quote = 1000 - age;
-// //     //    if (gender === 'male' && age < 56) {
-// //     //      quote += 250;
-// //     //    }
-// //     //    $("#rate").empty().append(quote);
-// //     //    $("#quote").show();
-// //     //  } else {
-// //     //    alert('Please enter your age.');
-// //     //  }
-// // });
-// //
-// //   });

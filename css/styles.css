@@ -40,12 +40,11 @@
 
 #button-div{
   text-align: center;
-  margin: 50px auto;
+  margin: 50px auto 30px auto;
 }
 
 #finalsubmit{
   background-color: #d11521;
-
 color: white;
 margin: 40px 0;
 padding: 15px 32px;
@@ -57,4 +56,12 @@ font-size: 26px;
 
 h2{
   font-size: 1.4rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+span{
+  font-weight: bold;
 }

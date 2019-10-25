@@ -32,19 +32,30 @@ $(document).ready(function(){
   $("#fingerform").submit(function(event){
     event.preventDefault();
     var fingers = parseInt($("#fingercount").val());
-    var eyes = $("select#gender").val();
+    var fingersFingers = parseInt($("#fingercount2").val());
+    var eyes = $("select#eyes").val();
 
 
-    if (age) {
-       var quote = 1000 - age;
-       if (gender === 'male' && age < 56) {
-         quote += 250;
-       }
-       $("#rate").empty().append(quote);
-       $("#quote").show();
-     } else {
-       alert('Please enter your age.');
-     }
+    // if (age) {
+    //    var quote = 1000 - age;
+    //    if (gender === 'male' && age < 56) {
+    //      quote += 250;
+    //    }
+    //    $("#rate").empty().append(quote);
+    //    $("#quote").show();
+    //  } else {
+    //    alert('Please enter your age.');
+    //  }
 });
 
   });
+
+  $(document).ready(function(){
+    $("#fingerform2").submit(function(event){
+      event.preventDefault();
+      var fingersFingers = parseInt($("#fingercount2").val());
+
+
+  });
+
+    });

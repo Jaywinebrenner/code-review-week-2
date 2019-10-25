@@ -60,12 +60,19 @@ h2{
   font-size: 1.4rem;
 }
 
+.radio-input[type="text"] {
+    font-size:5.4rem;
+}
+
+
+
 p {
   font-size: 2rem;
 }
 
 span{
   font-weight: bold;
+  text-decoration: underline;
 }
 
 .hand{

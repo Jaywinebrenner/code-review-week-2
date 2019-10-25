@@ -16,14 +16,23 @@ $(document).ready(function(){
     if (hand === "lefthand") {
       $("span#language").empty().append("Ruby");
       $("#output-div").show();
-    } else if (fingers >= 3 && fingersFingers >= 3) {
+    } else if (hand === "righthand" && fingers >= 5) {
       $("span#language").empty().append("C#");
       $("#output-div").show();
-    } else if (organ === "liver") {
+    } else if (hand === "righthand" && fingers >= 5 && fingersFingers >= 5) {
       $("span#language").empty().append("Python");
       $("#output-div").show();
-    } else {
+      alert("1");
+    } else if (hand === "righthand" && fingers < 5 && fingersFingers < 5 && organ === "liver") {
       $("span#language").empty().append("Java");
+      $("#output-div").show();
+      alert("1");
+    } else if (hand === "righthand" && fingers < 5 && fingersFingers < 5 && organ === "kidneys" && feetFingers >= 2) {
+      $("span#language").empty().append("LOLCODE");
+      $("#output-div").show();
+      alert("1");
+    } else {
+      $("span#language").empty().append("nothing");
       $("#output-div").show();
     }
 

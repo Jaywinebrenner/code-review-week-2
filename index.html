@@ -32,10 +32,27 @@
       </div>
 
 
-      <div id="handfingersize-wrapper" class="container">
-      <form id="handsizefingerform" action="index.html" method="post">
-        <label for="fingercount">How many fingers do you have?</label>
-             <input id="fingercount" type="text">
+      <div id="finger-wrapper" class="container">
+        <form id="fingerform" action="index.html" method="post">
+          <label for="fingercount">How many fingers do you have?</label>
+            <input id="fingercount" type="text">
+          <button id="fingersubmit" class="btn btn-primary" type="submit" name="button">Enter</button>
+        </form>
+      </div>
+
+      <div id="eyeball-wrapper" class="container">
+        <label for="eyes">Do you have an eye embedded in the palm of your hand?</label>
+          <select id="eyes">
+             <option value="yes">Yes</option>
+             <option value="no">No</option>
+           </select>
+          <button id="eyes-submit" class="btn btn-primary" type="submit" name="button">Enter</button>
+      </form>
+      </div>
+
+       <!-- <div id="quote">
+         <p>You will have to pay $<span id="rate"></span> for your animal insurance. Does not cover dismemberment.</p>
+       </div> -->
 
 
 

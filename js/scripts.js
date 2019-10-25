@@ -5,7 +5,12 @@ $(document).ready(function(){
     alert(hand);
 
 
+    $("#fingerform").submit(function(event){
+      event.preventDefault();
+      var fingers = parseInt($("#fingercount").val());
+      alert(fingers);
 
+    });
 
 
 

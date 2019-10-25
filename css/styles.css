@@ -5,11 +5,18 @@
 
 #finger-wrapper{
   margin-top: 50px
-
 }
 
 #finger-wrapper-2{
   margin-top: 50px
+}
+
+#organ-wrapper{
+  margin-top: 30px
+}
+
+#feet-wrapper{
+  margin-top: 30px;
 }
 
 #header{
@@ -29,6 +36,18 @@
 #button-div{
   text-align: center;
   margin: 50px auto;
+}
+
+#finalsubmit{
+  background-color: #d11521;
+
+color: white;
+margin: 40px 0;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 26px;
 }
 
 h2{

@@ -17,16 +17,11 @@ $(document).ready(function(){
       alert(fingersfingers);
 });
 
-    $("form#eyeform").submit(function(event){
+    $("form#organ").submit(function(event){
       event.preventDefault();
-      var eye= $("input:radio[name=hand]:checked").val();
-      alert(eye);
+      var organ= $("input:radio[name=organ]:checked").val();
+      alert(organ);
 });
-//     $("#eyes-submit").click(function(){
-//       // event.preventDefault();
-//       var eye = $("select#eye").val();
-//       alert(eye);
-// });
 
     $("form#feetform").submit(function(event){
       event.preventDefault();

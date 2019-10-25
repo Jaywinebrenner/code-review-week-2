@@ -54,25 +54,31 @@
 
       <hr>
 
-      <div id="eyeball-wrapper" class="container">
-        <form id="eyeform" action="index.html" method="post">
-          <label for="eyes">Do you have an eye embedded in the palm of your hand?</label>
-            <select id="eyes">
-               <option value="yes">Yes</option>
-               <option value="no">No</option>
-             </select>
-            <button id="eyes-submit" class="btn btn-primary" type="submit" name="button">Enter</button>
-        </form>
-
+        <div id="organ-wrapper" class="container">
+          <h2>Are there lungs embedded in the palm of your hand?</h2>
+            <form id="organ" action="index.html" method="post">
+              <div id="organ-wrapper">
+                <label>
+                <input id="lungs" class="radio-input" type="radio" name="organ" value="lungs">Lungs</label>
+                <label>
+                <input id="kidneys" class="radio-input" type="radio" name="organ" value="kidneys" >Kidneys</label>
+                <label>
+                <input id="liver"class="radio-input" type="radio" name="organ" value="liver">Liver</label>
+                <label>
+                <input id="pancreas"class="radio-input" type="radio" name="organ" value="pancreas">Pancreas</label>
+              </div>
+              <button id="organ-submit" class="btn btn-primary" type="submit" name="button">Enter</button>
+            </form>
+         </div>
 
 
       <hr>
 
-      <div id="feet-wrapper">
+      <div id="feet-wrapper" class="container">
         <h2>How many feet do your fingers have?</h2>
         <form id="feetform" action="index.html" method="post">
           <select class="form-control" id="feet">
-            <option>Please select:</option>
+            <option>Please select from the drop down menu:</option>
             <option>1</option>
             <option>2</option>
             <option>3</option>
@@ -88,6 +94,7 @@
 
       </div>
       <div id="button-div">
+        <h1>Click the button to determine the best coding language for your personal sensibilities</h1>
         <button id="finalsubmit" type="button" class="btn btn-primary btn-lg">Click Here</button>
       </div>
 

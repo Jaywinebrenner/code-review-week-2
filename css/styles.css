@@ -1,12 +1,16 @@
 #output-div{
   display: none;
+  text-align: center;
 }
 
+#output-div2{
+  display: none;
+  text-align: center;
+}
 
 .radio-input {
   margin: 8px;
 }
-
 
 #finger-wrapper{
   margin-top: 50px
@@ -32,11 +36,9 @@
   background-color: lightgray;
 }
 
-
 #eyeball-wrapper{
   margin-top: 50px
 }
-
 
 #button-div{
   text-align: center;
@@ -64,4 +66,14 @@ p {
 
 span{
   font-weight: bold;
+}
+
+.hand{
+  float: right;
+  height: 50px;
+  width: auto;
+  top: 300px;
+  position:relative;
+  margin-bottom: 300px;
+
 }

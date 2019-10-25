@@ -1,34 +1,46 @@
 $(document).ready(function(){
-  $("#handedness-form").submit(function(event){
+  $("form#handedness-form").submit(function(event){
     event.preventDefault();
     var hand = $("input:radio[name=hand]:checked").val();
     alert(hand);
+});
 
-
-    $("#fingerform").submit(function(event){
+    $("form#fingerform").submit(function(event){
       event.preventDefault();
       var fingers = parseInt($("#fingercount").val());
       alert(fingers);
+});
 
+    $("form#fingerform2").submit(function(event){
+      event.preventDefault();
+      var fingersfingers = parseInt($("#fingercount2").val());
+      alert(fingersfingers);
+});
+
+    $("form#eyeform").submit(function(event){
+      event.preventDefault();
+      var eye= $("input:radio[name=hand]:checked").val();
+      alert(eye);
+});
+//     $("#eyes-submit").click(function(){
+//       // event.preventDefault();
+//       var eye = $("select#eye").val();
+//       alert(eye);
+// });
+
+    $("form#feetform").submit(function(event){
+      event.preventDefault();
+      var feetFingers = parseInt($("#feet").val());
+      alert(feetFingers);
     });
 
-
-
-  });
 
 
 });
 
 
 
-// $(document).ready(function(){
-// //   $("#fingerform").submit(function(event){
-// //     event.preventDefault();
-// //     var fingers = parseInt($("#fingercount").val());
-// //     var fingersFingers = parseInt($("#fingercount2").val());
-// //     var eyes = $("select#eyes").val();
-// //
-// //
+
 // //     // if (age) {
 // //     //    var quote = 1000 - age;
 // //     //    if (gender === 'male' && age < 56) {

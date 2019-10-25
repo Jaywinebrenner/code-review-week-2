@@ -15,8 +15,6 @@
     </div>
     <div id=project-container>
 
-
-
     <div id="handedness-wrapper" class="container">
       <h2>Are you left handed? Or right handed?</h2>
         <form id="handedness-form" action="index.html" method="post">
@@ -57,15 +55,36 @@
       <hr>
 
       <div id="eyeball-wrapper" class="container">
-        <label for="eyes">Do you have an eye embedded in the palm of your hand?</label>
-          <select id="eyes">
-             <option value="yes">Yes</option>
-             <option value="no">No</option>
-           </select>
-          <button id="eyes-submit" class="btn btn-primary" type="submit" name="button">Enter</button>
-      </form>
+        <form id="eyeform" action="index.html" method="post">
+          <label for="eyes">Do you have an eye embedded in the palm of your hand?</label>
+            <select id="eyes">
+               <option value="yes">Yes</option>
+               <option value="no">No</option>
+             </select>
+            <button id="eyes-submit" class="btn btn-primary" type="submit" name="button">Enter</button>
+        </form>
+
+
 
       <hr>
+
+      <div id="feet-wrapper">
+        <h2>How many feet do your fingers have?</h2>
+        <form id="feetform" action="index.html" method="post">
+          <select class="form-control" id="feet">
+            <option>Please select:</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <button id="feet-submit" class="btn btn-primary" type="submit" name="button">Enter</button>
+        </form>
+      </div>
+      <hr>
+
+
 
       </div>
       <div id="button-div">

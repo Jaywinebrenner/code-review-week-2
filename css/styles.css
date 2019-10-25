@@ -80,15 +80,15 @@ span{
   text-decoration: underline;
   color: #d11521;
 }
+
+#hand-image{
+   height: 360px;
+   width: auto;
+   display: inline;
+   float: right;
 }
 
-.hand{
-  float: right;
-  height: 50px;
-  width: auto;
-  top: 300px;
-  position:relative;
-  margin-bottom: 300px;
+#handedness-wrapper{
 
 }
 

@@ -14,17 +14,17 @@
 
 
       <div id="handedness-wrapper" class="container">
-        <h2>Are you left handed? or right handed?</h2>
+        <h2>Are you left handed? Or right handed?</h2>
           <form id="handedness-form" action="index.html" method="post">
 
             <div id="lefthand-wrapper">
               <label>
-              <input class="radio-input" type="radio" name="lefthand" value="lefthand">Left Handed</label>
+              <input id="lefthand"class="radio-input" type="radio" name="lefthand" value="lefthand" onchange="valueChanged()">Left Handed</label>
             </div>
 
             <div id="lefthand-wrapper">
               <label>
-              <input class="radio-input" type="radio" name="righthand" value="righthand">Right Handed</label>
+              <input id="righthand" class="radio-input" type="radio" name="righthand" value="righthand" onchange="valueChanged()">Right Handed</label>
             </div>
             <button id="handedness-submit" class="btn btn-primary" type="submit" name="button">Enter</button>
           </form>
@@ -32,6 +32,10 @@
       </div>
 
 
+      <div id="handfingersize-wrapper" class="container">
+      <form id="handsizefingerform" action="index.html" method="post">
+        <label for="fingercount">How many fingers do you have?</label>
+             <input id="fingercount" type="text">
 
 
 

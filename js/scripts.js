@@ -1,5 +1,6 @@
 $(document).ready(function(){
   $("#finalsubmit").click(function(event){
+
     event.preventDefault();
     var hand = $("input:radio[name=hand]:checked").val();
     var fingers = parseInt($("#fingercount").val());
@@ -27,10 +28,14 @@ $(document).ready(function(){
       $("span#language").empty().append("Java");
       $("#output-div").show();
       alert("1");
+    } else if (hand === "righthand" && fingers < 5 && fingersFingers < 5 && organ === "lungs" && feetFingers >= 2) {
+      $("span#language").empty().append("Swift");
+      $("#output-div").show();
     } else if (hand === "righthand" && fingers < 5 && fingersFingers < 5 && organ === "kidneys" && feetFingers >= 2) {
       $("span#language").empty().append("LOLCODE");
       $("#output-div").show();
-      alert("1");
+    } else if (fingers === "NaN" || fingersFingers === "Nan") {
+      alert("Enter the correct information. Not a great sign for your programming aspiriations.")
     } else {
       $("span#language").empty().append("nothing");
       $("#output-div").fadeIn();
